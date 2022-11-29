@@ -1,0 +1,352 @@
+@charset "UTF-8";
+
+/* CSS Structure */
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    flex-direction: column;
+    background-color: #2C2C31;
+}
+
+.header {
+    text-align: right;
+    float: center;
+    background-color: #313131;
+    border: 0.5px solid #413E3E;
+    padding: 20px;
+    width: 100%;
+    height: 50%;
+    box-shadow: 1px 1px 1px #313131, 2px 2px 50px black;
+}
+
+h1 {
+    text-align: center;
+    width: auto;
+    font-size: 50px;
+    line-height: 55px;
+    color: white;
+    text-shadow: 2px 2px 2px #000, 3px 3px 6px white;
+}
+
+h2 {
+    text-align: center;
+    width: auto;
+    font-size: 22px;
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-left: 36%;
+    color: white;
+    text-align: justify;
+}
+
+p.typeA {
+    text-align: center;
+    float: left;
+    width: 65%;
+    color: white;
+}
+
+p.typeB {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 15px;
+    text-align: left;
+    float: left;
+    color: white;
+}
+
+a:hover {
+    color: rgba(203, 142, 60, 100%);
+}
+
+.typeAB {
+    margin-top: 2%;
+    font-size: 15px;
+    padding: auto;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+p.pluck {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.page-footer {
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
+
+#footer {
+    float: left;
+    position: fixed;
+    color: white;
+    font-size: 1em;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+/* Window Manager */
+
+form {
+    float: center;
+    margin: auto;
+    width: 900px;
+    height: 200px;
+    display: fixed;
+    background-color: #413E3E;
+    border-radius: 30px;
+    box-shadow: 8px 4px 50px black;
+}
+
+
+/* slightly transparent fallback */
+
+.backdrop-blur {
+    background-color: rgba(20, 18, 18, .4);
+}
+
+
+/* if backdrop support: very transparent and blurred */
+
+@supports ((-webkit-backdrop-filter: blur(9px)) or (backdrop-filter: blur(4px))) {
+    .backdrop-blur {
+        background-color: rgba(20, 18, 18, .4);
+        -webkit-backdrop-filter: blur(50px);
+        backdrop-filter: blur(50px) contrast(80%);
+    }
+}
+
+
+/* Full-width inputs */
+
+input[type=text] {
+    color: white;
+    padding: 15px 250px;
+    padding-left: 40px;
+    margin: -1px 0;
+    background-color: #242424;
+    border-radius: 50px;
+    border: 1px solid #707070;
+    box-sizing: border-box;
+}
+
+input[type=password] {
+    color: white;
+    padding: 15px 250px;
+    padding-left: 40px;
+    margin: 20px 0;
+    background-color: #242424;
+    border-radius: 50px;
+    border: 1px solid #707070;
+    box-sizing: border-box;
+}
+
+
+/* Set a style for all buttons */
+
+.position {
+    float: left;
+    margin-right: 0%;
+    margin-top: 15%;
+    margin-left: 0%;
+    padding: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#texture {
+    text-decoration: none;
+    list-style-type: none;
+    float: left;
+    margin-right: 0%;
+    margin-left: 0%;
+    padding: 0%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.container {
+    width: auto;
+}
+
+button {
+    background-color: #242424;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    border: 1px solid #707070;
+    cursor: pointer;
+    width: 94%;
+    margin-top: 5%;
+    margin-left: 40%;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+button:hover {
+    background-color: rgba(100, 100, 100, 100%);
+}
+
+button.bg_video_ctl {
+    border-radius: 30px;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    position: fixed;
+    cursor: pointer;
+    top: 95%;
+    left: 57%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(49, 49, 49, 100%);
+    -webkit-transition: .10s;
+    transition: .8s;
+    margin-right: auto;
+    padding: 0px 0px;
+}
+
+button.bg_video_ctl:hover {
+    background-color: rgba(100, 100, 100, 100%);
+}
+
+
+/* Center the avatar image inside this container */
+
+.imgcontainer {
+    text-align: -webkit-left;
+    height: 8%;
+}
+
+ol,
+ul {
+    margin: auto;
+    margin-bottom: auto;
+    float: left;
+    padding-top: 10px;
+}
+
+.restructuring {
+    display: inline-block;
+    width: 100%;
+}
+
+
+/* Avatar image */
+
+img.avatar {
+    float: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    width: 185px;
+    height: 115px;
+    display: inline-block;
+    /* border-radius: 50%; */
+    /* box-shadow: 4px 4px 4px #000, 8px 4px 25px black;*/
+}
+
+.vmd_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -100;
+}
+
+#bg_video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    opacity: 100%;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(placeholder.jpg) no-repeat;
+    background-size: cover;
+    /*   -webkit-filter: blur(30px);
+    -moz-filter: blur(30px);
+    -o-filter: blur(30px);
+    -ms-filter: blur(30px);
+    filter: blur(30px);*/
+}
+
+.glass-button {
+    display: inline-block;
+    padding: 15px 20px;
+    border: 0;
+    text-decoration: none;
+    background-color: rgba(20, 18, 18, .4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.glass-button:hover {
+    background-color: rgba(122, 115, 115, 0.4);
+}
+
+.sidenav {
+    height: 100%;
+    width: 8%;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    opacity: 100%;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.login {
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+
+.input-group {
+    position: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 61%;
+}
+
+
+/*CSS version 3.0, User Created Cascade Style Sheet version: 3.0.030220b1931, All rights reserverd © 2020 Ali Sadykov, Salesians Sarria. This code may be subject to modifications and improvements by only previously authorised people and/or institutions*/
