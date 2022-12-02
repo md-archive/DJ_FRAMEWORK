@@ -2,14 +2,11 @@ from django.db import models
 from django.contrib.auth.models import User
 from django import forms
 
-
 class username(models.Model):
     name = models.CharField(max_length=200)
-
     def __str__(self):
         return self.name
-
-
+    
 class items(models.Model):
     username = models.ForeignKey(username, on_delete=models.CASCADE)
     text = models.CharField(max_length=300)

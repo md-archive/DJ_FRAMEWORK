@@ -295,7 +295,7 @@ img.avatar {
 
 .glass-button {
     display: inline-block;
-    padding: 15px 20px;
+    padding: 20px 20px;
     border: 0;
     text-decoration: none;
     background-color: rgba(20, 18, 18, .4);
@@ -314,9 +314,9 @@ img.avatar {
 
 .sidenav {
     height: 100%;
-    width: 8%;
+    width: 20%;
     position: fixed;
-    z-index: 0;
+    z-index: 1;
     top: 0;
     left: 0;
     opacity: 100%;
@@ -337,7 +337,7 @@ img.avatar {
 
 .login {
     margin-left: 160px;
-    padding: 0px 10px;
+    padding: 6px 10px;
 }
 
 .input-group {
@@ -345,7 +345,18 @@ img.avatar {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
-    width: 61%;
+    width: 100%;
+}
+
+header {
+    float: center;
+    margin: auto;
+    width: 900px;
+    height: 200px;
+    display: fixed;
+    background-color: #413E3E;
+    border-radius: 30px;
+    box-shadow: 8px 4px 50px black;
 }
 
 
