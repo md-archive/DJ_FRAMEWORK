@@ -36,3 +36,6 @@ def create(response):
     else:
         form = CreateNewList()
     return render(response, "login/create.html", {"form":form})
+
+def register(response):
+    return render(response, "login/register.html", {})
