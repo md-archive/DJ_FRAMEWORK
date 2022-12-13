@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.garflix.GarflixConfig',
+    'garflix_ui.apps.GarflixUiConfig',
 ]
 
 MIDDLEWARE = [
