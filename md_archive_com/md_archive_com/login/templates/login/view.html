@@ -1,0 +1,13 @@
+{% extends "login/base.html" %}
+{% block title %} View List{% endblock %}
+
+{% block content %}
+    
+    <form method="post" action="#" class="form-group" style="padding-top: 1%">
+        <h1 style="padding-bottom: 4%">{{ls.name}}</h1>
+        {% for td in user.tdlist.all %}
+        {% csrf_token%}
+            <p><a href="/{{td.id}}">{{td.name}}</a></p>
+        {% endfor %}
+    </form>
+{% endblock %}
