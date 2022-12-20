@@ -3,15 +3,6 @@
 {% block title %}Cyborg - Awesome HTML5 Template {% endblock%}
 
 {% block content%}
-<ul class="nav">
-  <li><a href="/">Home</a></li>
-  <li><a href="/browse" class="active">Browse</a></li>
-  <li><a href="/details">Details</a></li>
-  <li><a href="/streams">Streams</a></li>
-  <li><a href="/profile">Profile <img src="{% static 'assets/images/profile-header.jpg' %}" alt=""></a></li>
-</ul>   
-
-
   </header>
   <!-- ***** Header Area End ***** -->
   <div class="container">
@@ -114,7 +105,7 @@
                 </div>
                 <ul>
                   <li>
-                    <img src="assets/images/game-01.jpg" alt="" class="templatemo-item">
+                    <img src="{% static 'assets/images/game-01.jpg' %}" alt="" class="templatemo-item">
                     <h4>Fortnite</h4>
                     <h6>Sandbox</h6>
                     <span><i class="fa fa-star" style="color: yellow;"></i> 4.9</span>
@@ -124,7 +115,7 @@
                     </div>
                   </li>
                   <li>
-                    <img src="assets/images/game-02.jpg" alt="" class="templatemo-item">
+                    <img src="{% static 'assets/images/game-02.jpg' %}" alt="" class="templatemo-item">
                     <h4>CS-GO</h4>
                     <h6>Legendary</h6>
                     <span><i class="fa fa-star" style="color: yellow;"></i> 4.9</span>
@@ -134,7 +125,7 @@
                     </div>
                   </li>
                   <li>
-                    <img src="assets/images/game-03.jpg" alt="" class="templatemo-item">
+                    <img src="{% static 'assets/images/game-03.jpg' %}" alt="" class="templatemo-item">
                     <h4>PugG</h4>
                     <h6>Battle Royale</h6>
                     <span><i class="fa fa-star" style="color: yellow;"></i> 4.9</span>
