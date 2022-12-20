@@ -1,1 +1,3 @@
 ./VIRT_ENV
+./venv
+./__pycache__
