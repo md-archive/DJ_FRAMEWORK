@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-3wx)#-pwrzx=7k^3$8hei#z177&)msz6iu=ox1x2r+4vk4bbx+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['garflix.md-archive.com','www.garflix.md-archive.com', '194.233.174.236']
+ALLOWED_HOSTS = ['garflix.md-archive.com','www.garflix.md-archive.com', '194.233.174.236', '127.0.0.1']
 
 
 # Application definition
