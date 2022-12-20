@@ -9,7 +9,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>{%block title%}Garflix - The best Garfield Collection Site {%endblock%}</title>
+    <title>{%block title%}Garflix - The best Garfield Netflix Like {%endblock%}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -82,7 +82,7 @@ https://templatemo.com/tm-579-cyborg-gaming
     </div>
   </header>
   <!-- ***** Header Area End ***** -->
-{%block content%}
+
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -93,7 +93,7 @@ https://templatemo.com/tm-579-cyborg-gaming
             <div class="row">
               <div class="col-lg-7">
                 <div class="header-text">
-                  <h6>Welcome To Garfield</h6>
+                  <h6>Welcome To Cyborg</h6>
                   <h4><em>Browse</em> Our Popular Games Here</h4>
                   <div class="main-button">
                     <a href="browse">Browse Now</a>
@@ -103,16 +103,18 @@ https://templatemo.com/tm-579-cyborg-gaming
             </div>
           </div>
           <!-- ***** Banner End ***** -->
-	</div>
+	{% block content%}
+{% endblock %}
+        </div>
       </div>
     </div>
   </div>
-{% endblock %}  
+  
   <footer>
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2022 <a href="#">Garflix Movies</a> Company. All rights reserved. 
+          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
           
           <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a>  Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
         </div>
