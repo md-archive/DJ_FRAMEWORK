@@ -50,7 +50,7 @@ https://templatemo.com/tm-579-cyborg-gaming
     <div class="container">
         <div class="row">
             <div class="col-12">
-              {% block navbar %}  
+              
               <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
                     <a href="{% static '/' %}" class="logo">
@@ -66,7 +66,7 @@ https://templatemo.com/tm-579-cyborg-gaming
                     </div>
                     <!-- ***** Search End ***** -->
                     <!-- ***** Menu Start ***** -->
-                    
+                    {% block navbar %}        
                     <ul class="nav">
                         <li><a href="/index" class="active">Home</a></li>
                         <li><a href="/browse">Browse</a></li>
@@ -74,12 +74,13 @@ https://templatemo.com/tm-579-cyborg-gaming
                         <li><a href="/streams">Streams</a></li>
                         <li><a href="/profile">Profile <img src="{% static 'assets/images/profile-header.jpg' %}" alt=""></a></li>
                     </ul>   
+                    {% endblock %}
                     <a class='menu-trigger'>
                         <span>Menu</span>
                     </a>
                     <!-- ***** Menu End ***** -->
                 </nav>
-                {% endblock %}
+                
             </div>
         </div>
     </div>
