@@ -11,7 +11,7 @@
           <div class="row">
             <div class="col-lg-3 col-sm-6">
                  
-                  <form method="POST" class="form-group">
+                  <form method="POST" class="form-group" style="color: slategrey; float: center; ">
                       {% csrf_token %}
                       {{ form|crispy }}
                       <button type="submit" class="btn btn-fail">Register</button>
