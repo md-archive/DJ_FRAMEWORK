@@ -1,7 +1,13 @@
 {% extends 'garflix_ui/base.html'%}
 {% block title%} Garflix - Login Page{% endblock%}
 {% load crispy_forms_tags %}
-{% block content%}
+
+{% block banner %}
+<h6>Welcome to User Profiler</h6>
+<h4>You are not Logged In! <em>Register or Login to view this page correctly</em></h4>
+{% endblock%}
+
+{% block content %}
 <div class="most-popular">
       <div class="row">
         <div class="col-lg-12">
