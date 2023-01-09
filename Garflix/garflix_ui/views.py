@@ -64,7 +64,7 @@ def signup(request):
             "error": 'Password do not match'
         })
 
-
+'''
 #  SignOut
 @login_required
 def signout(request):
@@ -90,3 +90,4 @@ def signin(request):
         else:
             login(request, user)
             return redirect('tasks')
+'''
