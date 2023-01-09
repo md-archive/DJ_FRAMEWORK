@@ -2,6 +2,18 @@
 {% block title%} Garflix - Login Page{% endblock%}
 {% load crispy_forms_tags %}
 
+
+{% block navbar %}
+<ul class="nav">
+  <li><a href="/index" >Home</a></li>
+  <li><a href="/browse">Browse</a></li>
+  <li><a href="/details">Details</a></li>
+  <li><a href="/streams">Streams</a></li>
+  <li><a href="/profile" class="active">Profile <img src="{% static 'assets/images/profile-header.jpg' %}" alt=""></a></li>
+</ul>   
+{% endblock %}
+
+
 {% block banner %}
 <h6>Welcome to User Profiler</h6>
 <h4>You are not Logged In! <em>Register or Login to view this page correctly</em></h4>
