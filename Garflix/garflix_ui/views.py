@@ -4,8 +4,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import login, logout, authenticate
 from django.db import IntegrityError
 # from .forms import TaskForm
-from django.contrib.auth.decorators import login_required
-
+from .forms import RegistrationForm
 
 def index(response):
     return render(response, "garflix_ui/base.html", {})
@@ -19,12 +18,21 @@ def details(response):
     return render(response, "garflix_ui/details.html", {})
 
 
-def profile(response):
-    return render(response, "garflix_ui/profile.html", {})
-
 
 def streams(response):
     return render(response, "garflix_ui/stream.html", {})
+
+def profile(response):
+    if response.method == "POST":
+        form = RegistrationForm(response.POST)
+        if form.is_valid():
+            form.save()
+    else:
+        form = RegistrationForm()
+
+    form = RegistrationForm()
+    return render(response, "garflix_ui/profile.html", {"form": form})
+
 
 # MIAU MIAU NIGGA!!
 # Sign Up
