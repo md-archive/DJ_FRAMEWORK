@@ -2,24 +2,11 @@
 {% block title%} Garflix - Login Page{% endblock%}
 
 {% block content%}
-<div class="row">
-    <div class="col-lg-8">
-      <div class="featured-games header-text">
-        <div class="heading-section">
-          <h1><em>Register</em></h1>
-        </div>
-        <div class="owl-features owl-carousel">
-          <div class="item">
-            <div class="thumb">
-              <div class="hover-effect">                
-              <form method="POST" class="form-group">
-                  {% csrf_token %}
-                  {{ form }}
-                  <button type="submit" class="btn btn-success">Register</button>
-              </form>  
-              </div>
-          </div>
-        </div>
-      </div>
+<form method="POST" class="form-group">
+      {% csrf_token %}
+      {{ form }}
+      <button type="submit" class="btn btn-success">Register</button>
+</form>  
+            
 
 {% endblock%}
