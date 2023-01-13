@@ -9,8 +9,7 @@ class RegistrationForm(UserCreationForm):
     firstname = forms.CharField()
     lastname = forms.CharField()
     username = forms.CharField()
-    
+
     class Meta:
         model = User
         fields = ["firstname", "lastname", "email", "username", "password1", "password2"]
-        
