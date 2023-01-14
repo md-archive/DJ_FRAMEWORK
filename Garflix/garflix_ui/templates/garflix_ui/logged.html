@@ -5,16 +5,19 @@
 
 
 {% block banner %}
-<h6>Welcome %user%</h6>
-<h4>You are Logged In!</h4>
-{% endblock%}
+<h1>Welcome,</h1>
+<h4>Logged as {{ user.username }}</h4>
+{% endblock %}
 
 {% block content %}
 <div class="most-popular">
       <div class="row">
         <div class="col-lg-12">
           <div class="heading-section">
-            <h1>Logged</h1>
+            <h1>Logged as:</h1>
+            <p>Username: {{ user.username }}</p>
+            <p>User-ID: {{ user.id }}</p>
+            <p>Created: {{ user.date_joined }}</p>
           </div>
       </div>
 </div>
