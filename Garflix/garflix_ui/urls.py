@@ -10,5 +10,4 @@ urlpatterns = [
     path('loginX/', views.loginX, name="loginX"),
     path('signout/', views.signout, name="signout"),
     path('streams/', views.streams, name="streams"),
-    path('signup/', views.signup, name="signup"),
 ]
