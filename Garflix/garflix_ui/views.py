@@ -38,7 +38,7 @@ def profile(request):
                     password=request.POST['password1'])
                 user.save()
                 login(request, user)
-                return redirect(logged)
+                return redirect(loginX)
             except IntegrityError:
                 return render(request, 'garflix_ui/profile.html', {
                     'form': RegistrationForm,
