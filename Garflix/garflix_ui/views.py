@@ -77,8 +77,6 @@ def loginX(request):
             return redirect(profile)
 
 
-# MIAU MIAU NIGGA!!
-
 
 def signup(request):
     return render(request, "gato")
