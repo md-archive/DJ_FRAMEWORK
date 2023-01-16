@@ -5,7 +5,7 @@
 
 
 {% block banner %}
-<h1>Welcome back,</h1>
+<h1>Welcome</h1>
 {% endblock %}
 
 {% block content %}
@@ -24,8 +24,7 @@
                         {% csrf_token %}
                         {{ form | crispy }}
                         <button type="submit" class="btn btn-success">Login</button>
-                        <p>MIAU MIAU NIGGA!:</p>
-                        {{error}}
+                       <p> {{error}} </p>
                     </form>  
                 </div>
               </div>
